@@ -1,0 +1,315 @@
+/* Global Reset and Transition */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+  margin: 0 15px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Soft neutral background color */
+}
+
+/* Header Styling */
+.header {
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
+  background-color: #333;
+}
+
+.header #logo img {
+  width: 80px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav a:hover, .nav a.active {
+  color: #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 5px;
+}
+
+/* Main Background Section */
+.main-background {
+  background: url('gag.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a; /* Dark background color for contrast */
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text h1 {
+  color: white;
+  font-size: 3rem;
+  opacity: 0.8;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Section Styling */
+.body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #444;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styling */
+.footer {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footerhr {
+  margin-top: 10px;
+  border: 1px solid #333;
+}
+
+/* Table Styling */
+table, th, td {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+td {
+  background-color: #fff;
+}
+
+/* Certificate & Hobbies Sections */
+.certificate,
+.hobbies {
+  margin-top: 30px;
+}
+
+.certificate h2,
+.hobbies h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.certificate p,
+.hobbies ul {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Skill Summary Section */
+.article {
+  margin-top: 20px;
+}
+
+.article h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.article ul {
+  list-style: inside;
+}
+
+.article li {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+#response-message {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Mobile, Tablet, and Desktop Responsiveness */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+
+  .main-background {
+    height: 40vh;
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .body {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2, h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+
+  .main-background {
+    height: 35vh;
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+  }
+
+  .body {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+}
+
+/* Desktop (1024px and above) */
+@media screen and (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .main-background {
+    height: 50vh;
+  }
+
+  .main-text h1 {
+    font-size: 3rem;
+  }
+
+  .body {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2, h3 {
+    font-size: 2rem;
+  }
+}
